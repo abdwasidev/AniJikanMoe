@@ -1,0 +1,31 @@
+{
+  "name": "anijikanmoe",
+  "version": "1.0.0",
+  "description": "AniJikanMoe is Web for Anime Detail.",
+  "main": "app.js",
+  "scripts": {
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack build --config webpack.prod.js"
+  },
+  "keywords": [
+    "AniJikanMoe"
+  ],
+  "author": "AbdulWasi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

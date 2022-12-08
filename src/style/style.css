@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+@import './../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f375;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #a9f999;
+}
+a:hover {
+    color: #fd746c;
+}
+
+footer {
+    width: 100%;
+    /* clear: both; */
+    position: relative;
+    bottom: 0;
+    /* margin-top: 40px; */
+    background-color: #2d2327;
+    border-top: 4px solid #a9f999;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer::after {
+    position: relative;
+}
