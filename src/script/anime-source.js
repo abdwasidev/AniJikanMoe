@@ -1,16 +1,16 @@
-const baseUrl = 'https://api.jikan.moe/v3/';
+const baseUrl = 'https://api.jikan.moe/v4/';
 
 class AnimeSource {
 
     static searchAnime(keyword) {
-        return fetch(`${baseUrl}search/anime?q=${keyword}&page=1&limit=3`)
+        return fetch(`${baseUrl}anime?q=${keyword}`)
             .then(response => {
                 return response.json();
             })
             .then(responseJson => {
-                if (responseJson.results) {
-                    console.log(responseJson.results);
-                    return Promise.resolve(responseJson.results);
+                if (responseJson.data) {
+                    console.log(responseJson.data);
+                    return Promise.resolve(responseJson.data);
                 } else {
                     return Promise.reject(`<h2 style="margin: 20px;">${keyword} is not found<h2>`);
                 }

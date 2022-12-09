@@ -52,12 +52,12 @@ class AnimeItem extends HTMLElement {
 
             </style>
                 <h1>${this._anime.title}</h1>
-                <img src="${this._anime.image_url}">
+                <img src="${this._anime.images.webp.image_url}">
                 <p>${this._anime.synopsis}</p>
                 <table>
                     <tr>
-                        <td>Airing</td>
-                        <td><b>: </b>${this._anime.airing}</td>
+                        <td>Aired</td>
+                        <td><b>: </b>${this._anime.aired.string}</td>
                     </tr>
                     <tr>
                         <td>Type</td>
@@ -65,11 +65,11 @@ class AnimeItem extends HTMLElement {
                     </tr>
                     <tr>
                         <td>Episode</td>
-                        <td><b>: </b>${this._anime.episode}</td>
+                        <td><b>: </b>${this._anime.episodes}</td>
                     </tr>
                     <tr>
                         <td>Rating</td>
-                        <td><b>: </b>${this._anime.rated}</td>
+                        <td><b>: </b>${this._anime.rating}</td>
                     </tr>
                     <tr>
                         <td>Score</td>
